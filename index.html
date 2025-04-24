@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-Br">
 <head>
-    <div class="container">
-        <!-- Content here -->
-      </div>
+    // Source mixin
+@mixin make-container($padding-x: $container-padding-x) {
+  width: 100%;
+  padding-right: $padding-x;
+  padding-left: $padding-x;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// Usage
+.custom-container {
+  @include make-container();
+}
     <meta charset="UTF-8"><h1>El Cuecudos</h1>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
